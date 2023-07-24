@@ -5,7 +5,10 @@ import java.util.Map;
 
 public class SimCard {
 
+    public static int callsExecuted;
+
     protected final String phoneNumber;
+
 
     protected final int credit;
     public Map<String, Integer> call = new HashMap<>();
@@ -23,6 +26,7 @@ public class SimCard {
         this.phoneNumber = phoneNumber;
         this.credit = credit;
         this.plan = plan;
+
     }
 
     @Override
@@ -35,16 +39,4 @@ public class SimCard {
     }
 
 
-
-
-
-    /*public  Map<String, Integer> getCall() {
-        for(Map.Entry<String,Integer> call : call.entrySet()){
-             System.out.printf("Called Phone: %s \n Time of call: %s \n", call.getKey(), call.getValue());
-        }
-
-        return null;
-    }
-
-     */
 }

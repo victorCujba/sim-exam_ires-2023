@@ -11,16 +11,6 @@ public class OperatorPlan {
         this.cost = cost;
     }
 
-
-    public int getCost() {
-        return cost;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-
     @Override
     public String toString() {
         return name + " , " + "Cost : " + cost + " €/min";
